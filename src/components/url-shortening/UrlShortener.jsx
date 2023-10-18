@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import ShortenedUrl from "./ShortenedUrl";
+import "../../App.scss";
+
 
 const UrlShortener = () => {
 
@@ -35,10 +37,10 @@ const UrlShortener = () => {
 
     return (
 
-        <div className="form-container">
+        <div className="form">
             <form onSubmit={shortenUrl}>
-                <div className='shorten-section shorten-bg' >
-                    <div className='shorten-section'>
+                <div className='shorten bg' >
+                    <div className='shorten'>
                         <div style={{ display: "flex", flexDirection: "column"}}>
                             <input
                                 type="text"
@@ -47,16 +49,16 @@ const UrlShortener = () => {
                                 onChange={(e) => setUrl(e.target.value)}
                                 onFocus={() => setError(false)}
                                 placeholder="Shorten a link here..."
-                                className={`shorten-form ${error ? "border border-danger text-danger" : "border"}`}
+                                className={`${error ? "border border-danger text-danger" : "border"}`}
                             />
                             <span
-                                className={`error-message ${error ? "visible opacity-100 text-danger" : "invisible opacity-0"
+                                className={`${error ? "visible opacity-100 text-danger" : "invisible opacity-0"
                                     }`}
                             >
                                 Please add valid a link
                             </span>
                         </div>
-                        <button type="submit" className="shorten-btn">Shorten it!</button>
+                        <button type="submit" className="input-btn">Shorten it!</button>
                     </div>
                 </div>
             </form>

@@ -8,34 +8,34 @@ const Features = () => {
 
     return (
 
-      <div className="advancedStatistics_container">
+      <div className="stats">
       <h3>Advanced Statistics</h3>
       <p>Track how your links are performing across the web with our advanced statistics dashboard.</p>
       
 
-      <div className="cards-container">
+      <div className="cards">
           <div className="card-line"></div>
 
-          <div className="card-container" id="card-1">
-              <div className="card-icon-container">
+          <div className="card" id="card-1">
+              <div className="icon">
                   <div>
                       <img src={iconBrandRecognition} alt="" />
                   </div>
               </div>
-              <h4 className="card-title">
+              <h4>
                   Brand Recognition
               </h4>
               <p>
                   Boost your brand recognition with each click. Generic links don't mean a thing. Branded links help instil confidence in your content.
               </p>
           </div>
-          <div className="card-container" id="card-2">
-              <div className="card-icon-container">
+          <div className="card" id="card-2">
+              <div className="icon">
                   <div>
                       <img src={iconDetailedRecords} alt="" />
                   </div>
               </div>
-              <h4 className="card-title">
+              <h4>
                   Detailed Records
               </h4>
               <p>
@@ -43,13 +43,13 @@ const Features = () => {
               </p>
           </div>
 
-          <div className="card-container" id="card-3">
-              <div className="card-icon-container">
+          <div className="card" id="card-3">
+              <div className="icon">
                   <div>
                       <img src={iconFullyCustomizable} alt="" />
                   </div>
               </div>
-              <h4 className="card-title">
+              <h4>
                   Fully Customizable
               </h4>
               <p>

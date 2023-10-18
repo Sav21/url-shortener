@@ -1,9 +1,10 @@
-import logo from '../images/logo.svg'
+import logo from '../images/logo.svg';
+import '../App.scss';
 
 const Header = () => {
     return (
       <>
-      <nav className="navbar navbar-expand-lg navbar-light header-container">
+      <nav className="nav-header navbar navbar-expand-lg navbar-light">
           <a className="navbar-brand" href="#"><img src={logo} alt="logo" /></a>
 
           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,7 +30,7 @@ const Header = () => {
                       <a className="nav-link" href="#">Login</a>
                   </li>
                   <li className="nav-item">
-                      <button className="header-btn" type="submit">Sign Up</button>
+                      <button className="btn" type="submit">Sign Up</button>
                   </li>
               </ul>
 

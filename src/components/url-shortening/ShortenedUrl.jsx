@@ -13,15 +13,15 @@ const ShortenedUrl = ({ data }) => {
 
   return (
     
-    <div className="shortend-container shortend-bg">
-        <div style={{ flexGrow: '1'}} className="shortend-link">
+    <div className="shortend">
+        <div className="link">
           <a href={data.original_link} style={{color: "black"}}>{data.original_link}</a>
         </div>
-        <div><hr className="shortend-line"/></div>
+        <div><hr/></div>
         <div style={{display: "flex", flexDirection: "row", alignItems: "baseline"}}>
-          <a href={data.full_short_link} style={{color: "#2BD0D0"}} className="shortend-new-link">{data.full_short_link}</a>
+          <a href={data.full_short_link} style={{color: "#2BD0D0"}} className="new-link">{data.full_short_link}</a>
         </div>
-          <button onClick={copyLink} className="shortend-btn">{ copied ? "Copied!" : "Copy"}</button>
+          <button onClick={copyLink} className="">{ copied ? "Copied!" : "Copy"}</button>
     </div>
   )
 };

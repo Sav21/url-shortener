@@ -2,14 +2,15 @@ import twitterIcon from '../images/icon-twitter.svg';
 import facebookIcon from '../images/icon-facebook.svg';
 import instagramIcon from '../images/icon-instagram.svg';
 import pinterestIcon from '../images/icon-pinterest.svg';
+import "../App.scss";
 
 const Footer = () => {
     return (
       <>
-      <div className="footer-container">
+      <div className="footer">
       <h2>Shortly</h2>
 
-      <div className="footer-block">
+      <div className="block">
           <ul>
           <h6>Features</h6>
               <li><a href="">Link Shortening</a></li>
@@ -17,7 +18,7 @@ const Footer = () => {
               <li><a href="">Analytics</a></li>
           </ul>
       </div>
-      <div className="footer-block">
+      <div className="block">
           <ul>
           <h6>Resources</h6>
               <li><a href="">Blog</a></li>
@@ -25,7 +26,7 @@ const Footer = () => {
               <li><a href="">Support</a></li>
           </ul>
       </div>
-      <div className="footer-block">
+      <div className="block">
           <ul>
           <h6>Company</h6>
               <li><a href="">About</a></li>
@@ -33,7 +34,7 @@ const Footer = () => {
               <li><a href="">Contact</a></li>
           </ul>
       </div>
-      <div className="footer-block footer-social">
+      <div className="block social">
           <a href="#"><img src={facebookIcon} alt="fb" /></a>
           <a href="#"><img src={twitterIcon} alt="tw" /></a>
           <a href="#"><img src={pinterestIcon} alt="pt" /></a>
